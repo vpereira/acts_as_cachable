@@ -1,7 +1,7 @@
 = acts_as_cachable
 
-Description goes here.
-
+It add some caching strategy to our application. If you add to a ActiveRecord class the method acts_as_cachable, 
+it will already add some cache around first,last and all methods
 == Contributing to acts_as_cachable
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet

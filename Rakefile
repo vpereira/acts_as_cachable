@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "acts_as_cachable"
   gem.homepage = "http://github.com/vpereira/acts_as_cachable"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{adding some automatic caching to activerecord}
+  gem.description = %Q{we implemented some automatic caching to first,last and all methods}
   gem.email = "vpereira@web.de"
   gem.authors = ["vpereira"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,

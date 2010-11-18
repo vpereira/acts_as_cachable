@@ -1,7 +1,16 @@
 require 'helper'
 
 class TestActsAsCachable < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+  def setup
+    MyClass.send(:acts_as_cachable)
+    @m = MyClass.new
+  end
+  
+  should "m be valid" do
+    assert @m
+  end
+  
+  should "@m acts_as_cachable" do
+    assert MyClass.respond_to?(:uncached_all)
   end
 end
