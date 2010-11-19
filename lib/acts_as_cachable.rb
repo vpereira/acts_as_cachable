@@ -17,9 +17,9 @@ module ActiveRecord
             default_configuration[:methods].each do |m|
               next unless self.respond_to?(m.to_sym)
               self.metaclass.send(:alias_method, "uncached_#{m}".to_sym, "#{m}".to_sym)
-              self.metaclass.send(:define_method,"#{m}".to_sym) do
+              self.metaclass.send(:define_method,"self.#{m}".to_sym) do
                  Rails.cache.fetch("#{self.class.name}_#{m}") do
-                  "uncached_#{m}"
+                  self.metaclass.send("uncached_#{m}".to_sym)
                 end
               end
             end
