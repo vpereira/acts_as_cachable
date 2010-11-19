@@ -16,7 +16,8 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'acts_as_cachable'
 
 
+class MyClass < ActiveRecord::Base
+end
+
 class Test::Unit::TestCase
-  class MyClass < ActiveRecord::Base
-  end
 end
