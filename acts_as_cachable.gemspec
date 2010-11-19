@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["vpereira"]
-  s.date = %q{2010-11-18}
+  s.date = %q{2010-11-19}
   s.description = %q{we implemented some automatic caching to first,last and all methods}
   s.email = %q{vpereira@web.de}
   s.extra_rdoc_files = [
@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "acts_as_cachable.gemspec",
     "lib/acts_as_cachable.rb",
     "test/helper.rb",
     "test/test_acts_as_cachable.rb"
