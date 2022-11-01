@@ -1,36 +1,36 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    activemodel (3.0.0)
-      activesupport (= 3.0.0)
-      builder (~> 2.1.2)
-      i18n (~> 0.4.1)
-    activerecord (3.0.0)
-      activemodel (= 3.0.0)
-      activesupport (= 3.0.0)
-      arel (~> 1.0.0)
-      tzinfo (~> 0.3.23)
-    activesupport (3.0.0)
-    arel (1.0.1)
-      activesupport (~> 3.0.0)
-    builder (2.1.2)
-    git (1.2.5)
-    i18n (0.4.1)
-    jeweler (1.5.1)
-      bundler (~> 1.0.0)
-      git (>= 1.2.5)
-      rake
-    rake (0.8.7)
-    rcov (0.9.9)
-    shoulda (2.11.3)
-    tzinfo (0.3.23)
+    activemodel (7.0.4)
+      activesupport (= 7.0.4)
+    activerecord (7.0.4)
+      activemodel (= 7.0.4)
+      activesupport (= 7.0.4)
+    activesupport (7.0.4)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    concurrent-ruby (1.1.10)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.16.3)
+    shoulda (4.0.0)
+      shoulda-context (~> 2.0)
+      shoulda-matchers (~> 4.0)
+    shoulda-context (2.0.0)
+    shoulda-matchers (4.5.1)
+      activesupport (>= 4.2.0)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord (>= 3.0.0)
-  bundler (~> 1.0.0)
-  jeweler (~> 1.5.1)
-  rcov
+  activerecord (>= 6.0.0)
+  bundler (~> 2.3.0)
   shoulda
+
+BUNDLED WITH
+   2.3.21
